@@ -11,13 +11,13 @@ def detectF(cascade, test_image, scaleFactor = 1.3):
     return len(faces)
 
 
-cassy = cv2.CascadeClassifier('data/haarcascades/haarcascade_frontalface_default.xml')
+cassy = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 #q = detectF(cassy, cv2.imread('data/baby1.png'))
 #print(q)
 i = 0
 image_list = list()
-image_dir = 'img/china_male_53/'
-with os.scandir('img/china_male_53/') as root_dir:
+image_dir = '/china_male_53/'
+with os.scandir('/china_male_53/') as root_dir:
     for path in root_dir:
         if path.is_file():
             i += 1
