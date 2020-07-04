@@ -16,8 +16,8 @@ cassy = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 #print(q)
 i = 0
 image_list = list()
-image_dir = '/china_male_53/'
-with os.scandir('/china_male_53/') as root_dir:
+image_dir = 'china_male_53/'
+with os.scandir('china_male_53/') as root_dir:
     for path in root_dir:
         if path.is_file():
             i += 1
